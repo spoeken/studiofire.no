@@ -1,0 +1,32 @@
+{
+  "name": "studiofire.no",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "generateFavicon": "real-favicon generate faviconDescription.json faviconData.json ./public/favicons",
+    "injectFavicon": "real-favicon inject faviconData.json ./templates/layouts ./templates/layouts/*.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cli-real-favicon": "0.0.6",
+    "laravel-mix": "^2.1.11",
+    "postcss-easy-import": "^3.0.0",
+    "precss": "^3.1.2"
+  },
+  "dependencies": {
+    "postcss-css-variables": "^0.8.1",
+    "postcss-preset-env": "^5.1.0",
+    "tachyons": "^4.10.0"
+  },
+  "now": {
+    "alias": "www.studiofire.no"
+  }
+}
