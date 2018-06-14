@@ -22,9 +22,13 @@
     "precss": "^3.1.2"
   },
   "dependencies": {
+    "install": "^0.11.0",
+    "npm": "^6.1.0",
     "postcss-css-variables": "^0.8.1",
+    "postcss-custom-media": "^6.0.0",
     "postcss-preset-env": "^5.1.0",
-    "tachyons": "^4.10.0"
+    "tachyons": "^4.10.0",
+    "tachyons-build-css": "^1.7.0"
   },
   "now": {
     "alias": "www.studiofire.no"

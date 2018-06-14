@@ -7,8 +7,7 @@ mix
   .js('src/js/app.js', buildPath + 'js/')
   .postCss('src/css/app.css', buildPath + 'css/', [
     require('postcss-easy-import'),
-    require('postcss-preset-env'),
-    require('postcss-css-variables')
+    require('precss')
   ])
   .browserSync({
     proxy: devUrl,
